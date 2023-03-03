@@ -1,0 +1,345 @@
+<!-- Bootstrap 4.0 is only USED -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>tinDog</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap  css-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- CSS folder  -->
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <!--IMPORTANT
+    
+    U NEED TO ADD STYLES.CSS FILE UR CSS FILE AFTER THE BOOTSTRAP CSS FILE SO THAT BOOSTRAP DO NO OVERRIDES UR CSS FILE CONTENT 
+  
+  ########IMP##########
+  
+  -->
+
+    <!-- Bootstrap js -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+
+    <!-- FONT AWESOME A VERY IMPORTANT WEBSITE TO TAKE ICON PNGS FOR WEBSITE TO ADD THERE PNGS WE ADD THERE SCRIPT(LINK) TO THE HTML HEAD THE ICONS ARE USED IN THE FILE AS GOOGLE APPLE GITHUB ICONS -->
+
+    <script
+      src="https://kit.fontawesome.com/417efaa003.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <section id="title" class="colored-section">
+      <div class="container-fluid">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="">tinDog</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#footer"
+                  >Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#cta"
+                  >Download</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Title -->
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="big-heading">Meet new and interesting dogs nearby.</h1>
+
+            <!-- here the link in '' and the after part of onclick in "" is very important 
+              <button onclick="window.location.href='http://www.example.com'">Go to example.com</button>
+             -->
+            <button
+              onclick="window.location.href='https://apps.apple.com/us/app/twindog/id994625591'"
+              type="button"
+              class="btn btn-dark btn-lg d_button"
+            >
+              <i class="fa-brands fa-apple"></i> Download
+            </button>
+
+            <!-- 
+              we can use anchor tag insted of button <a href="#" class="btn btn-primary">Go somewhere</a>--best
+
+              another way to use button to open a link is by anchor tag inside the button we can use target=blank in the button weith onclick but i was unable to use <button onclick="window.location.href='https://www.example.com'" target="_blank">Go to Example</button>--something new
+               anchor tag way in which we can use the target=blank <button><a href="https://example.com" target="_blank">Go to Example.com</a></button>
+               but by this method u need to add one more class and withe help off css u need to take out the text decoration underline also need to remove the hover state and also change its color to white as its blue for links---longest method
+             -->
+            <button
+              type="button"
+              class="btn btn-outline-light btn-lg d_button"
+              onclick="window.location.href='https://play.google.com/store/apps/details?id=com.tindog.tindog&hl=en_IN&gl=US'"
+            >
+              <i class="fa-brands fa-google-play"></i> Download
+            </button>
+          </div>
+
+          <div class="col-lg-6">
+            <img
+              class="title-image"
+              src="images/iphone6.png"
+              alt="iphone-mockup"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+
+    <section id="features" class="white-section">
+      <div class="container-fluid">
+      <div class="row row-feature">
+        <div class="col-lg-4 feature-box">
+          <i class="fa-solid fa-circle-check fa-5x icon-feature"></i>
+          <h3 class="feature-title">Easy to use.</h3>
+          <p>So easy to use, even your dog could do it.</p>
+        </div>
+        <div class="col-lg-4 feature-box">
+          <i class="fa-solid fa-bullseye fa-5x icon-feature"></i>
+          <h3 class="feature-title">Elite Clientele</h3>
+          <p>We have all the dogs, the greatest dogs.</p>
+        </div>
+        <div class="col-lg-4 feature-box">
+          <i class="fa-solid fa-heart fa-5x icon-feature"></i>
+          <h3 class="feature-title">Guaranteed to work.</h3>
+          <p>Find the love of your dog's life or your money back.</p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+
+    <section id="testimonials" class="colored-section"> 
+      <div
+        id="carousel-testimonial"
+        class="carousel slide"
+        data-ride="carousel"
+        data-pause="hover"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carousel-testimonial"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carousel-testimonial" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active container-fluid">
+            <h2 class="testimonial-text">
+              I no longer have to sniff other dogs for love. I've found the
+              hottest Corgi on TinDog. Woof.
+            </h2>
+            <img
+              class="testimonial-image"
+              src="images/dog-img.jpg"
+              alt="dog-profile"
+            />
+            <em>Pebbles, New York</em>
+          </div>
+          <div class="carousel-item container-fluid">
+            <h2 class="testimonial-text">
+              My dog used to be so lonely, but with TinDog's help, they've found
+              the love of their life. I think.
+            </h2>
+            <img
+              class="testimonial-image"
+              src="images/lady-img.jpg"
+              alt="lady-profile"
+            />
+            <em>Beverly, Illinois</em>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carousel-testimonial"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carousel-testimonial"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+
+          <!-- 
+            here the aria=hidden is to not to read the button when we switch to speech(reads all the content on the screen and convert into voice) its written for the ppl who cant see but can hear 
+            insted of reading the button it just reads the next as previous bcoz of the sr-only class this is added just to make user friendly 
+           -->
+        </a>
+      </div>
+    </section>
+
+    <!-- Press -->
+
+    <section id="press" class="colored-section">
+      <img class="press_logo" src="images/techcrunch.png" alt="tc-logo" />
+      <img class="press_logo" src="images/tnw.png" alt="tnw-logo" />
+      <img
+        class="press_logo"
+        src="images/bizinsider.png"
+        alt="biz-insider-logo"
+      />
+      <img class="press_logo" src="images/mashable.png" alt="mashable-logo" />
+    </section>
+
+    <!-- Pricing -->
+
+    <section id="pricing" class="white-section">
+      <div class="container-fluid">
+      <h2 class="price-heading">A Plan for Every Dog's Needs</h2>
+      <p>Simple and affordable price plans for your and your dog.</p>
+      <div class="card-deck">
+        <!-- card mark-up is used to make it responsive according to u -->
+        <div class="pricing-card col-lg-4 col-md-6">
+        <div class="card text-center">
+          <!-- we have used text align center in the extern css for the id pricing so that even the content out of cards are aligned to the center so there is no need to addd text-center 
+            text-center used in card aligns everything to the center also can be used in card-header or body or footer specifically text-right text-left(this is default)-->
+          <div class="card-header">
+            <h3 class="card-heading">Chihuahua</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">$0 Free<small class="text-muted"> / mo</small></h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn btn-lg btn-block btn-outline-dark">Sign Up</button>
+            <!-- we and btn so it takes button from bootstrap than btn-lg large btn-block takes full width -->
+          </div>
+          </div>
+        </div>
+        <div class="pricing-card col-lg-4 col-md-6">
+        <div class="card ">
+          <div class="card-header ">
+            <h3 class="card-heading">Labrador</h3>
+          </div>
+          <div class="card-body">
+            <!-- spaces are not issue ither $49space or space/ mo works same but no space result in $49/mo -->
+            <h2 class="price-text">$49  <small class="text-muted">  / mo</small></h2>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn btn-lg btn-block btn-dark">Sign Up</button>
+          </div>
+        </div>
+        </div>
+        <div class="pricing-card col-lg-4">
+        <div class="card ">
+          <div class="card-header">
+            <h3 class="card-heading">Mastiff</h3>
+          </div>
+          <div class="card-body">
+            <h2 class="price-text">$99<small class="text-muted"> / mo</small></h2>
+            <p>Pirority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button type="button" class="btn btn-lg btn-block btn-dark">Sign Up</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- Call to Action -->
+
+    <section id="cta" class="colored-section">
+      <div class="container-fluid">
+      <h3 class="cta-heading">Find the True Love of Your Dog's Life Today.</h3>
+      <button
+        onclick="window.location.href='https://apps.apple.com/us/app/twindog/id994625591'"
+        type="button"
+        class="btn btn-dark btn-lg d_button"
+      >
+        <i class="fa-brands fa-apple"></i> Download
+      </button>
+      <button
+        type="button"
+        class="btn btn-light btn-lg d_button"
+        onclick="window.location.href='https://play.google.com/store/apps/details?id=com.tindog.tindog&hl=en_IN&gl=US'"
+      >
+        <i class="fa-brands fa-google-play"></i> Download
+      </button>
+    </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer id="footer" class="white-section">
+      <div class="container-fluid">
+      <!-- onclick is extra i added -->
+      <i class="fa-brands fa-instagram icons" onclick="window.location.href='https://www.instagram.com/anii_akhil/'"></i>
+      <i class="fa-brands fa-facebook-f icons" onclick="window.location.href='https://www.facebook.com/'"></i>
+      <i class="fa-brands fa-github icons" onclick="window.location.href='https://github.com/ANii693'"></i>
+      <i class="fa-brands fa-linkedin-in icons" onclick="window.location.href='https://www.linkedin.com/in/anirudh-rai-072732220/'"></i>
+      <i class="fa-solid fa-envelope icons " onclick="window.location.href='mailto:anirudhrai503@gmail.com'"></i>
+      <p class="copyright">© Copyright 2023 tinDog Devloped by Anirudh Rai</p>
+    </div>
+    </footer>
+  </body>
+</html>
