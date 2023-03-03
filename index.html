@@ -1,4 +1,4 @@
-<!-- Bootstrap 4.0 is only USED -->
+<!-- Bootstrap 4.0 is USED -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -21,13 +21,7 @@
     <!-- CSS folder  -->
 
     <link rel="stylesheet" href="css/styles.css" />
-    <!--IMPORTANT
-    
-    U NEED TO ADD STYLES.CSS FILE UR CSS FILE AFTER THE BOOTSTRAP CSS FILE SO THAT BOOSTRAP DO NO OVERRIDES UR CSS FILE CONTENT 
-  
-  ########IMP##########
-  
-  -->
+    <!--IMPORTANT U NEED TO ADD STYLES.CSS FILE AFTER THE BOOTSTRAP CSS FILE LINK SO THAT BOOSTRAP DO NO OVERRIDES UR CSS FILE CONTENT -->
 
     <!-- Bootstrap js -->
     <script
@@ -48,9 +42,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="icon" href="images/favicon.png" type="image/png" />
-
-    <!-- FONT AWESOME A VERY IMPORTANT WEBSITE TO TAKE ICON PNGS FOR WEBSITE TO ADD THERE PNGS WE ADD THERE SCRIPT(LINK) TO THE HTML HEAD THE ICONS ARE USED IN THE FILE AS GOOGLE APPLE GITHUB ICONS -->
-
     <script
       src="https://kit.fontawesome.com/417efaa003.js"
       crossorigin="anonymous"
@@ -103,9 +94,7 @@
           <div class="col-lg-6">
             <h1 class="big-heading">Meet new and interesting dogs nearby.</h1>
 
-            <!-- here the link in '' and the after part of onclick in "" is very important 
-              <button onclick="window.location.href='http://www.example.com'">Go to example.com</button>
-             -->
+     
             <button
               onclick="window.location.href='https://apps.apple.com/us/app/twindog/id994625591'"
               type="button"
@@ -114,13 +103,6 @@
               <i class="fa-brands fa-apple"></i> Download
             </button>
 
-            <!-- 
-              we can use anchor tag insted of button <a href="#" class="btn btn-primary">Go somewhere</a>--best
-
-              another way to use button to open a link is by anchor tag inside the button we can use target=blank in the button weith onclick but i was unable to use <button onclick="window.location.href='https://www.example.com'" target="_blank">Go to Example</button>--something new
-               anchor tag way in which we can use the target=blank <button><a href="https://example.com" target="_blank">Go to Example.com</a></button>
-               but by this method u need to add one more class and withe help off css u need to take out the text decoration underline also need to remove the hover state and also change its color to white as its blue for links---longest method
-             -->
             <button
               type="button"
               class="btn btn-outline-light btn-lg d_button"
@@ -225,11 +207,7 @@
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
-
-          <!-- 
-            here the aria=hidden is to not to read the button when we switch to speech(reads all the content on the screen and convert into voice) its written for the ppl who cant see but can hear 
-            insted of reading the button it just reads the next as previous bcoz of the sr-only class this is added just to make user friendly 
-           -->
+          
         </a>
       </div>
     </section>
@@ -237,7 +215,7 @@
     <!-- Press -->
 
     <section id="press" class="colored-section">
-      <img class="press_logo" src="images/techcrunch.png" alt="tc-logo" />
+      <img class="press_logo" src="images/TechCrunch.png" alt="tc-logo" />
       <img class="press_logo" src="images/tnw.png" alt="tnw-logo" />
       <img
         class="press_logo"
@@ -254,11 +232,10 @@
       <h2 class="price-heading">A Plan for Every Dog's Needs</h2>
       <p>Simple and affordable price plans for your and your dog.</p>
       <div class="card-deck">
-        <!-- card mark-up is used to make it responsive according to u -->
+        
         <div class="pricing-card col-lg-4 col-md-6">
         <div class="card text-center">
-          <!-- we have used text align center in the extern css for the id pricing so that even the content out of cards are aligned to the center so there is no need to addd text-center 
-            text-center used in card aligns everything to the center also can be used in card-header or body or footer specifically text-right text-left(this is default)-->
+          
           <div class="card-header">
             <h3 class="card-heading">Chihuahua</h3>
           </div>
@@ -268,7 +245,7 @@
             <p>10 Messages Per Day</p>
             <p>Unlimited App Usage</p>
             <button type="button" class="btn btn-lg btn-block btn-outline-dark">Sign Up</button>
-            <!-- we and btn so it takes button from bootstrap than btn-lg large btn-block takes full width -->
+          
           </div>
           </div>
         </div>
@@ -278,7 +255,7 @@
             <h3 class="card-heading">Labrador</h3>
           </div>
           <div class="card-body">
-            <!-- spaces are not issue ither $49space or space/ mo works same but no space result in $49/mo -->
+           
             <h2 class="price-text">$49  <small class="text-muted">  / mo</small></h2>
             <p>Unlimited Matches</p>
             <p>Unlimited Messages</p>
@@ -332,7 +309,7 @@
 
     <footer id="footer" class="white-section">
       <div class="container-fluid">
-      <!-- onclick is extra i added -->
+      
       <i class="fa-brands fa-instagram icons" onclick="window.location.href='https://www.instagram.com/anii_akhil/'"></i>
       <i class="fa-brands fa-facebook-f icons" onclick="window.location.href='https://www.facebook.com/'"></i>
       <i class="fa-brands fa-github icons" onclick="window.location.href='https://github.com/ANii693'"></i>
