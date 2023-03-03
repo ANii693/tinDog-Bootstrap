@@ -13,3 +13,17 @@ Main components used from Bootstrap
 * card-deck
 * button
 * container
+
+css main concepts to highlight 
+* z-index  stack flow
+* media query breakpoints
+* selector priority
+
+<br><br><br><br>
+
+
+code refactoring priority 
+1. readability
+2. modularity
+3. efficiency
+4. length
