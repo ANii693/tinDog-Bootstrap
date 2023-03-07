@@ -19,11 +19,16 @@ css main concepts to highlight
 * media query breakpoints
 * selector priority
 
-<br><br><br><br>
-
 
 code refactoring priority 
 1. readability
 2. modularity
 3. efficiency
 4. length
+
+
+![ss1]()
+![ss2]()
+![ss3]()
+![ss4]()
+![ss5]()
