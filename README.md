@@ -26,9 +26,3 @@ code refactoring priority
 3. efficiency
 4. length
 
-
-![ss1]()
-![ss2]()
-![ss3]()
-![ss4]()
-![ss5]()
